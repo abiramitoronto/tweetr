@@ -46,7 +46,7 @@ Login URL ==> http://localhost:8080
 
 layout.css - This contains the style for main container. This is modifed for responsive design to differentiate the styles for both Desktop and Tablet.
 
-'''js
+```js
 html {
   box-sizing: border-box;
 }
@@ -83,7 +83,7 @@ body {
   }
 }
 
-'''
+```
 
 header.css - This contains the header part of the browser which shows the profile name and picture
 
