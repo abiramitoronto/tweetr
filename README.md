@@ -46,7 +46,7 @@ Login URL ==> http://localhost:8080
 
 layout.css - This contains the style for main container. This is modifed for responsive design to differentiate the styles for both Desktop and Tablet.
 
-'''css
+'''js
 html {
   box-sizing: border-box;
 }
@@ -87,7 +87,7 @@ body {
 
 header.css - This contains the header part of the browser which shows the profile name and picture
 
-```css
+```js
 .headAlign {
   min-height: 120px;
   background: rgb(255, 187, 0);
@@ -127,7 +127,7 @@ header.css - This contains the header part of the browser which shows the profil
 
 error.css - This contains the styles for throwing error box
 
-```css
+```js
 .Error-Box {
   border: 4px solid red;
   margin-block: 1em;
@@ -172,7 +172,7 @@ nav.css - This contains the styles for Main Header that is clipped to the page o
 
 tweeBox.css - This contains the style for tweetBox that shows current and old tweets
 
-```css
+```js
 .tweet-box {
   transition: box-shadow .3s;
   min-height: 120px;
