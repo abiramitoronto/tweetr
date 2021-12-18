@@ -1,0 +1,35 @@
+.headAlign {
+  min-height: 120px;
+  background: rgb(255, 187, 0);
+  padding-left: 12em;
+}
+
+.imgAlign {
+  padding-left: 12em;
+  min-height: 400px;
+  background: rgb(255, 187, 0);
+}
+
+.userName {
+  padding-left: 14em;
+  font-weight: bold;
+  color: black;
+  font-family: "sans-serif";
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  
+  .headAlign {
+    width: 33.3%;
+    float: left;
+    padding-top: 2em;
+    padding-left: 4.5em;
+    margin: 1em;
+    margin-left: 1em;
+  }
+
+  .userName {
+    padding-left: 2em;
+  }
+}

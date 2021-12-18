@@ -1,0 +1,71 @@
+.tweetButton {
+  background-color:hsl(226, 43%, 44%);
+  font-family: "Bungee";
+  color: #FFFFFF;
+}
+
+.counter {
+  justify-content: right;
+  align-items: right;
+  color: black;
+}
+
+
+.new-tweet {
+  min-height: 120px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  color: #FFFFFF;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweetArea {
+  display: flex;
+  
+}
+
+#tweet-textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 5px solid black;
+  margin-bottom: 0.5em;
+  outline: 0;
+}
+
+
+.tweetDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-header {
+  
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile {
+  display:flex;
+  align-items: center;
+}
+.profile img {
+  margin-right: 1em;
+}
+
+/* Table styles */
+@media only screen and (min-width: 768px) {
+  
+  .new-tweet {
+    width: 100%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  
+  .new-tweet {
+    width: 100%;
+    float: right;
+  }
+}

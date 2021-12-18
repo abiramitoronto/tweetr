@@ -1,0 +1,28 @@
+.navigate {
+  min-height: 120px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  color: #FFFFFF;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: #4056A1;
+  font-family: "Bungee";
+}
+
+
+.navRight {
+  display:block;
+  font-family: "sans-serif";
+
+}
+
+.navArrow {
+  padding-left: 3em;
+  color: #ff0000;
+  justify-content: right;
+  align-items: center;
+}
