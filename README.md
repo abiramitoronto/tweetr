@@ -10,14 +10,13 @@ Login URL ==> http://localhost:8080
 
 ## Desktop Version 
 
-!["Desktop Version"](https://github.com/abiramitoronto/tinyapp/blob/master/docs/MainPage.png)
+!["Desktop Version"](https://github.com/abiramitoronto/tweetr/blob/master/docs/Desktop.png)
 
 ## Tablet Version
-!["Login Page"](https://github.com/abiramitoronto/tinyapp/blob/master/docs/LoginPage.png)
-
+!["Table Version Header Page"](https://github.com/abiramitoronto/tweetr/blob/master/docs/TabletMain.png)
 
 ## Tablet Version
-!["Registration Page](https://github.com/abiramitoronto/tinyapp/blob/master/docs/RegisterPage.png)
+!["Tablet Version Tweet Box"](https://github.com/abiramitoronto/tweetr/blob/master/docs/TabletTweet.png)
 
 
 ## Getting Started
