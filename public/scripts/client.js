@@ -50,7 +50,13 @@ const createTweetElement = (tweet) => {
   const flag = generateIDValue();
   const retweet = generateIDValue();
   const likes = generateIDValue();
-  const $tweetReturn = `<article class="tweet-box">
+  const hover = generateIDValue();
+  const $tweetReturn = `<article class="tweet-box" id="${hover}" onmouseover="$(document).ready(function() 
+  {
+    $(${hover}).css('box-shadow', '0px 0px 11px rgba(68,68,68,.6)');
+  });" onmouseout="$(document).ready(function() {
+    $(${hover}).css('box-shadow', '');
+  });">
     <header class="tweet-header">
       <div class="profile">
         <img id="chat-img" src="${avatars}" width="70" height="70">

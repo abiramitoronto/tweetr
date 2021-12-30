@@ -1,17 +1,14 @@
 .tweet-box {
-  transition: box-shadow .3s;
+  transition: box-shadow .9s;
   min-height: 120px;
   padding: 1.5em;
-  color: #FFFFFF;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1em;
-  border: 4px solid black;
+  border: 4px solid #ccc;
+  background: #fff;
 };
 
-.tweet-box:hover {
-  box-shadow: 0 0 11px rgba(8, 4, 241, 0.892);
-}
 .chat-img {
     min-height: 120px;
     padding-left: 12em;
