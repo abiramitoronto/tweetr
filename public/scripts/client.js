@@ -66,7 +66,7 @@ const createTweetElement = (tweet) => {
     </header>
     <br>
     <div class="tweetArea">
-        <textarea name="text" id="tweet-textarea" rows="2" cols="100">${text}</textarea>
+        <textarea name="text" id="tweet-textarea" rows="2" cols="100" readonly>${text}</textarea>
     </div>
     <footer>
       <div class="foot-data">
