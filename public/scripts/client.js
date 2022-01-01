@@ -128,16 +128,19 @@ const renderTweets = (tweets) => {
 // AJAX.
    $('#tweet-action').submit(function (event){
      event.preventDefault();  
-     $(".Error-Box").remove(); 
      let textAreaVal = $('#tweet-textarea').val();
      let textAreaLen = textAreaVal.length;
      if (textAreaVal === null || textAreaLen === 0) {
        $(".new-tweet").prepend(emptyTweetError);
+       setTimeout(function() {
+       $('.Error-Box').remove();},3000);
      }
       else if (textAreaLen > 140) {
         $(".new-tweet").prepend(longTweetError);
+        setTimeout(function() {
+          $('.Error-Box').remove();},3000);
      } else {
-      $(".Error-Box").remove(); 
+      $('.Error-Box').remove();
       const data = $(this).serialize();
       $('#tweet-textarea').val('');
       $('#counter').val('140');
@@ -149,3 +152,4 @@ const renderTweets = (tweets) => {
      }
    })
    });
+   
