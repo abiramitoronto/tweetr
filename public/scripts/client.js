@@ -47,10 +47,10 @@ const createTweetElement = (tweet) => {
   const handle = tweet["user"].handle;
   const text = tweet["content"].text;
   const timeago_test = timeago.format(tweet["created_at"]);
-  const flag = generateIDValue();
-  const retweet = generateIDValue();
-  const likes = generateIDValue();
-  const hover = generateIDValue();
+  const flag = tweet["user"].flag;
+  const retweet = tweet["user"].retweet;
+  const likes = tweet["user"].likes;
+  const hover = tweet["user"].hover;
   const $tweetReturn = `<article class="tweet-box" id="${hover}" onmouseover="$(document).ready(function() 
   {
     $(${hover}).css('box-shadow', '0px 0px 11px rgba(68,68,68,.6)');
@@ -113,6 +113,16 @@ const renderTweets = (tweets) => {
   $.ajax('/tweets', { method: 'GET' })
   .then(function (tweetObj) {
     console.log('Success: ', tweetObj);
+    for (const loop of tweetObj) {
+      const flag = generateIDValue();
+      const retweet = generateIDValue();
+      const likes = generateIDValue();
+      const hover = generateIDValue();
+      loop.user["flag"] = flag;
+      loop.user["retweet"] = retweet;
+      loop.user["likes"] = likes;
+      loop.user["hover"] = hover;
+    }
     tweetObj.sort(function(a, b) {
       return b.created_at - a.created_at;
     });
