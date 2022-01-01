@@ -62,7 +62,7 @@ const createTweetElement = (tweet) => {
         <img id="chat-img" src="${avatars}" width="70" height="70">
         <label id="chat-name" style="color: black;" for="tweet-text">${name}</label>
       </div>
-      <div id="handle">${handle}</div>
+      <div id="handle" style="color:cadetblue">${handle}</div>
     </header>
     <br>
     <div class="tweetArea">
